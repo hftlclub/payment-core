@@ -18,8 +18,7 @@ npm install
 
 install Database Tables (will ask for confirmation)
 ```bash
-cd ./payment-core/install
-node reinstall.js
+node ./install/reinstall.js
 ```
 
 core-server can be started by
