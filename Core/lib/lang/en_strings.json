@@ -1,0 +1,64 @@
+{
+  "general": {
+    "error": "Node Process Error [errno:2000]",
+    "404": "ressource not found or does not exist [%s][%s://%s%s] [errno:2001]",
+    "ipfilter": "IP %s is not accepted by IP-Filter [errno:2002]",
+    "localfilter": "IP %s is not accepted by LocalFilter",
+    "api_rate_limit_reached": "api rate limit reached [errno:2003]",
+    "terminal_rate_limit_reached": "terminal rate limit reached [errno:2004]",
+    "env_error": "ENV value (%s) is invalid [errno:2005]"
+  },
+  "email": {
+    "html_title" : "Overview of your most recent transactions.",
+    "subject": "%s, you had the following transactions within the last %s.",
+    "timerange_format_is_invalid" : "Unsupported TimeRange-Format: %s .",
+    "timerange_time_is_negative" : "Time (%s) must be > 0",
+    "timerange_value_is_invalid" : "TimeRange-Value: %s is not acceptable."
+
+  },
+  "database": {
+    "error": "Database Error [errno:3000]"
+  },
+  "card": {
+    "added_new_card": "Added new Card with UID:%s",
+    "updated_card": "Updated Card with UID:%s",
+    "missing_update_params": "Missing Update Params: %s [errno:4000]",
+    "invalid_uid_param": "Invalid Card-UID transmitted [errno:4001]",
+    "card_does_not_exist": "Card with UID:%s does not exist [errno:4002]",
+    "card_already_exists": "Card with UID:%s already exists [errno:4003]",
+    "card_is_not_activated": "Card with UID:%s is not activated [errno:4004]",
+    "card_has_no_user": "Card with UID:%s has no assigned User [errno:4005]"
+  },
+  "user": {
+    "added_new_user": "Added new User with Name:%s and EMail:%s",
+    "invalid_username": "Invalid Username transmitted [errno:5000]",
+    "user_does_not_exist": "User with Username:%s does not exist [errno:5001]",
+    "user_already_exists": "User with Username:%s already exists [errno:5002]",
+    "missing_update_params": "Missing Update Params: %s [errno:5003]",
+    "updated_user": "Updated User with Username:%s"
+  },
+  "terminal": {
+    "header_missing": "Header Entry for token is missing [errno:6000]",
+    "terminal_does_not_exist": "Terminal with Token|ID:%s does not exist [errno:6001]",
+    "invalid_name": "Invalid value for Terminal-Name transmitted [errno:6002]",
+    "invalid_token": "Invalid value for Terminal-Token transmitted [errno:6003]",
+    "added_new_terminal": "Success: Added new Terminal with Name:%s and Token:%s",
+    "terminal_already_exists": "Terminal with Token:%s already exists [errno:6004]",
+    "missing_update_params": "Missing Update Params: %s [errno:6005]",
+    "updated_terminal": "Updated Terminal with ID:%s"
+  },
+  "transaction": {
+    "payment": "Payment over %i Credits for Card:%s from Terminal:%s, remaining Credits:%i",
+    "added_credits": "Added %i Credits for Card UID:%s",
+    "invalid_credit_amount": "Credit value %i needs to be between %i and %i [errno:7000]",
+    "credit_amount_not_divisible": "Credit value %i is not divisible by %i [errno:7001]",
+    "credit_type_error": "Credit %i is not an Integer [errno:7002]",
+    "invalid_credit_param": "Invalid Credit-Param transmitted [errno:7003]",
+    "invalid_id_param": "Invalid Transaction-Param transmitted [errno:7004]",
+    "not_enough_credits": "Not enough credits, missing %i credits! [errno:7005]",
+    "mark_transaction": "Marked Transaction:%i from Terminal:%i",
+    "mark_updated_to_solved": "Updated Status for Transaction-Mark:%i to Solved (for Transaktion:%i)",
+    "transaction_does_not_exist": "Transaction with ID:%s does not exist [errno:7006]",
+    "transactionMark_does_not_exist": "Transaction-Mark with ID:%s does not exist [errno:7007]"
+  }
+}

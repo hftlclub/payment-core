@@ -1,0 +1,1183 @@
+{
+	"info": {
+		"_postman_id": "eb9aecda-281d-469d-b870-aec6f464eb01",
+		"name": "MP-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Karten",
+			"description": "",
+			"item": [
+				{
+					"name": "Get All Karten",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "uid",
+									"value": "123456789111",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/card",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"card"
+							]
+						},
+						"description": "Adds a new User"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Guthaben UID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Terminal",
+								"value": "BBBBTOKEN1234"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "uid",
+									"value": "1f7aa98945",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/card/CCWWWWW",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"card",
+								"CCWWWWW"
+							]
+						},
+						"description": "Adds a new User"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transaktionen By UID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "terminal",
+								"value": "BBBBTOKEN1234"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "uid",
+									"value": "1f7aa98945",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "terminal",
+									"value": "f438bdf1824977731d8eef509ceba532e48b1b1e6b5bbb6415aa85875079a788",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/card/CCWWWWW/transactions",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"card",
+								"CCWWWWW",
+								"transactions"
+							]
+						},
+						"description": "Adds a new User"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Karte",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "uid",
+									"value": "FFFFFFFF",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/card",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"card"
+							]
+						},
+						"description": "Adds a new User"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Karte",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userref",
+									"value": "CCCA",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "enabled",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/card/FFFFFFFF",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"card",
+								"FFFFFFFF"
+							]
+						},
+						"description": "Adds a new User"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "Get ALL User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "vorname",
+									"value": "aaaa",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nachname",
+									"value": "bbb",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@b.cd",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"user"
+							]
+						},
+						"description": "Adds a new User"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "vorname",
+									"value": "aaaa",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nachname",
+									"value": "bbb",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@b.cd",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/user/AAAA",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"user",
+								"AAAA"
+							]
+						},
+						"description": "Adds a new User"
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "CCCA",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "admin",
+									"value": "false",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "CC@CC.localf",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"user"
+							]
+						},
+						"description": "Adds a new User"
+					},
+					"response": []
+				},
+				{
+					"name": "Patch User",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "bb@cc.dee",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "admin",
+									"value": "0",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/user/AAAA",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"user",
+								"AAAA"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Terminal",
+			"description": "",
+			"item": [
+				{
+					"name": "Get All Terminals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/terminal",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"terminal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Terminal by ID|Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/terminal/f438bdf1824977731d8eef509ceba532e48b1b1e6b5bbb6415aa85875079a788",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"terminal",
+								"f438bdf1824977731d8eef509ceba532e48b1b1e6b5bbb6415aa85875079a788"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Terminal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test1terminal",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "0123456789abcdef1222",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/terminal",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"terminal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Terminal",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "bar1111",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "1111111",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "enabled",
+									"value": "1",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/terminal/0123456789abcdef1222",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"terminal",
+								"0123456789abcdef1222"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaktion",
+			"description": "",
+			"item": [
+				{
+					"name": "Get All Transaktionen",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "einzahlung",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "betrag",
+									"value": "500",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nutzerid",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "einzahlung",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "betrag",
+									"value": "500",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nutzerid",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Gesamtguthaben",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "einzahlung",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "betrag",
+									"value": "500",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nutzerid",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/total",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"total"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Einzahlen",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "credits",
+									"value": "50",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "cardUID",
+									"value": "1f7aa98945",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/deposit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"deposit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bezahlen",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "terminal",
+								"value": "BBBBTOKEN1234"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "credits",
+									"value": "-50",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "cardUID",
+									"value": "1f7aa98945",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/pay",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"pay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "terminal",
+								"value": "BBBBTOKEN1234"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "credits",
+									"value": "5000",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "cardUID",
+									"value": "1f7aa98945",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/admin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Terminal Exception Check",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "terminal",
+								"value": "AAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCC"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "credits",
+									"value": "-50",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "cardUID",
+									"value": "1f7aa98945",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/pay",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"pay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Markierte offene Transaktionen",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "einzahlung",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "betrag",
+									"value": "500",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "nutzerid",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/marked",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"marked"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaktion Markieren",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "terminal",
+								"value": "BBBBTOKEN1234"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/100",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaktion Markierung Schließen",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/transaction/mark/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"transaction",
+								"mark",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "email & stuff",
+			"description": "",
+			"item": [
+				{
+					"name": "404 Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8800/api/u",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"u"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "preview next mails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8800/email/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"email",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "preview for user (HTML)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8800/email/preview/AAAA/1DAY/html",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"email",
+								"preview",
+								"AAAA",
+								"1DAY",
+								"html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send mails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8800/email/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8800",
+							"path": [
+								"email",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

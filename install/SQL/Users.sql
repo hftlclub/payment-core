@@ -1,0 +1,12 @@
+CREATE TABLE `Users` (
+  `Username` VARCHAR(255) NOT NULL,
+  `Password` VARCHAR(255) NOT NULL,
+  `EMail`    VARCHAR(100) NOT NULL,
+  `Admin`    BOOLEAN      NOT NULL     DEFAULT FALSE,
+  `Created`  DATETIME     NOT NULL     DEFAULT CURRENT_TIMESTAMP,
+  `Changed`  DATETIME     NULL ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE `Users.Email` (`EMail`),
+  PRIMARY KEY (`Username`)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;

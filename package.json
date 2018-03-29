@@ -1,0 +1,39 @@
+{
+  "name": "payment-core",
+  "version": "1.0.0",
+  "description": "payment-core aplication",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node ./tests/runTests.js"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "express-rate-limit": "^2.11.0",
+    "ip-filter": "^2.0.0",
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.6.3",
+    "promise-mysql2": "^1.0.0",
+    "validator": "^9.4.1",
+    "winston": "^3.0.0-rc3",
+    "winston-daily-rotate-file": "^3.0.1"
+  },
+  "repository": "https://github.com/hftlclub/payment-core",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "maildev": "^1.0.0-rc3",
+    "mocha": "^5.0.4",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "engines": {
+    "node": ">=8.5.0"
+  }
+}
